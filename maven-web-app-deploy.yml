@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
  name: mavenwebappdeployment
 spec:
- replicas: 1
+ replicas: 2
  strategy: 
     type: Recreate
  selector: 
@@ -19,6 +19,7 @@ spec:
     containers:
     - name: mavenwebappcontainer
       image: harikumarv98/mavenwebapp
+      imagePullpolicy: Always
       ports:
       - containerPort: 8080
 ---
@@ -27,7 +28,7 @@ kind: Service
 metadata:
  name: mavenwebappsvc
 spec:
-  type: NodePort
+  type: loadbalancer
   selector:
    app: mavenwebapp
   ports:
