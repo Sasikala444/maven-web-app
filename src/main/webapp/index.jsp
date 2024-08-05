@@ -5,7 +5,7 @@
 
 <a href="https://ashokitech.com/online-training-schedules">Click Here To See AchiversIT Training Schedules</a>
   
-  <h2> Call Us : + 91 - 888 47 133 27 </h2>
+  <h2> Call Us : + 91 - </h2>
 
 </body>
 </html>
